@@ -16,13 +16,13 @@ public class JUNITStack extends TestCase {
 		assertFalse(s1.isFull());
 		assertEquals(1, Top);
 	}
-	public void LastInFirstOut() {
+	public void testLastInFirstOut() {
 		Stack s1 = new Stack();
 		s1.push(1);
 		s1.push(2);
 		s1.push(3);
 		Object Pop = s1.Pop();
 		assertFalse(s1.isFull());
-		assertEquals(321, Pop);
+		assertEquals(3, Pop);
 	}
 }
